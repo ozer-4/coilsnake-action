@@ -30,7 +30,7 @@ inputs:
 
 runs:
     using: 'docker'
-    image: 'docker://ozer-4/coilsnake:latest'
+    image: 'docker://ozer4/coilsnake:latest'
   
 branding:
     color: 'green'
