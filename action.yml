@@ -6,9 +6,9 @@ inputs:
     rom-hash:
         description: | 
             sha256 hash of the EarthBound (USA) 24Mbit headerless ROM file.
-            Please use it with GitHub's secret feature.
+            Please use it with GitHub's secrets feature.
         required: true
-    output-file-name:
+    patch-file-name:
         description: 'Name of the patch file.'
         required: false
         default: 'eb'
