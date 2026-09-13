@@ -3,35 +3,35 @@ description: CoilSnake Compiler for CI/CD jobs.
 author: ozer-4
 
 inputs:
-	rom-hash:
-		description: | 
-			sha256 hash of the EarthBound (USA) 24Mbit headerless ROM file.
-			Please use it with GitHub's secret feature.
-		required: true
-	output-file-name:
-		description: 'Name of the patch file.'
-		required: false
-		default: 'eb'
-	expanding-option:
-		description: | 
-			Expand the ROM file.
-			Specify the target size you want to expand to: [32MBit / 48MBit].
-			If you don't want to expand the ROM file you can skip this option.
-		required: false
-	author-name:
-		description: 'Project author name for the EBP patch file.'
-		required: false
-	ebm-description:
-		description: 'Project description for the EBP patch file.'
-		required: false
-	title-name:
-		description: 'Project title for the EBP patch file.'
-		required: false
+    rom-hash:
+        description: | 
+            sha256 hash of the EarthBound (USA) 24Mbit headerless ROM file.
+            Please use it with GitHub's secret feature.
+        required: true
+    output-file-name:
+        description: 'Name of the patch file.'
+        required: false
+        default: 'eb'
+    expanding-option:
+        description: | 
+            Expand the ROM file.
+            Specify the target size you want to expand to: [32MBit / 48MBit].
+            If you don't want to expand the ROM file you can skip this option.
+        required: false
+    author-name:
+        description: 'Project author name for the EBP patch file.'
+        required: false
+    ebp-description:
+        description: 'Project description for the EBP patch file.'
+        required: false
+    title-name:
+        description: 'Project title for the EBP patch file.'
+        required: false
 
 runs:
-  	using: 'docker'
-  	image: 'ozer4//coilsnake:latest'
+    using: 'docker'
+    image: 'docker://ozer-4/coilsnake:latest'
   
 branding:
-	color: 'green'
-  	icon: "package"
+    color: 'green'
+    icon: 'package'
